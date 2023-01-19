@@ -13,7 +13,9 @@ Para este efeito, serão utilizados a framework de desenvolvimento Web Flask e o
 
 <hr>
 
-# 1ºPasso: Autenticação 
+# Passos
+
+## 1ºPasso: Autenticação 
 
 ### Para ter acesso à API REST do Spotify é preciso seguir alguns passos de autenticação e autorização
 
@@ -39,7 +41,7 @@ curl -X "GET"
 ``` 
 9. Para o Projeto 3, é suficiente copiar manualmente o token obtido no Passo 7 para uma variável no código do programa servidor. Este token possui uma duração limitada, o implica que este passo possa ter de ser refeito algumas vezes durante o desenvolvimento do projeto.
 
-# 2ºPasso: Conexão: 
+## 2ºPasso: Conexão: 
 
 #### **Run this two in different terminal terminal** 
 
