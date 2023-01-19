@@ -71,12 +71,24 @@ CREATE <id_user> <id_musica> <avaliacao>
 ## Comando READ ou DELETE
 
 ```bash
-READ|DELETE UTILIZADOR <id_user> 
+READ|DELETE UTILIZADOR <id_user>
+```
+```bash
 READ|DELETE ARTISTA <id_artista>
+```
+```bash
 READ|DELETE MUSICA <id_musica>
+```
+```bash
 READ|DELETE ALL < UTILIZADORES | ARTISTAS | MUSICAS>
+```
+```bash
 READ|DELETE ALL MUSICAS_A <id_artista>
+```
+```bash
 READ|DELETE ALL MUSICAS_U <id_user>
+```
+```bash
 READ|DELETE ALL MUSICAS <avaliacao>
 ```
 
@@ -84,6 +96,8 @@ READ|DELETE ALL MUSICAS <avaliacao>
 
 ```bash
 UPDATE MUSICA <id_musica> <avaliacao> <id_user>
+```
+```bash
 UPDATE UTILIZADOR <id_user> <password>
 ```
 
