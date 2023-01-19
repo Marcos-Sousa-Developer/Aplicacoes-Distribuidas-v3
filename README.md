@@ -43,7 +43,7 @@ curl -X "GET"
 
 ## 2ºPasso: Conexão
 
-#### **Run this two in different terminal terminal** 
+#### **Run these two on different terminals** 
 
 ```bash
 python3 cliente.py 
