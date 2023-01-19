@@ -53,7 +53,7 @@ python3 python3 server.py
 ```
 <hr> 
 
-# Instruções (In client.py terminal)
+# Instruções (In the client.py terminal)
 
 ## Comando CREATE
 
