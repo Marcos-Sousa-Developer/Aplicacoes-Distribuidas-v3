@@ -13,7 +13,7 @@ Para este efeito, serão utilizados a framework de desenvolvimento Web Flask e o
 
 <hr>
 
-## Autenticação 
+# 1ºPasso: Autenticação 
 
 ### Para ter acesso à API REST do Spotify é preciso seguir alguns passos de autenticação e autorização
 
@@ -36,29 +36,34 @@ curl -X "GET"
 "https://api.spotify.com/v1/search?q=nome_artista&type=artist" -H
 "Accept: application/json" -H "Content-Type: application/json" -H
 "Authorization: Bearer meu_OAuthToken"
-desenvolvimento do projeto.
 ``` 
+9. Para o Projeto 3, é suficiente copiar manualmente o token obtido no Passo 7 para uma variável no código do programa servidor. Este token possui uma duração limitada, o implica que este passo possa ter de ser refeito algumas vezes durante o desenvolvimento do projeto.
 
-9. Para o Projeto 3, é suficiente copiar manualmente o token obtido no Passo 7 para uma
-variável no código do programa servidor. Este token possui uma duração limitada, o
-implica que este passo possa ter de ser refeito algumas vezes durante o
-#### **Run it on terminal** 
+# 2ºPasso: Conexão: 
+
+#### **Run this two in different terminal terminal** 
+
 ```bash
-python3 lock_client.py
+python3 cliente.py 
 ```
-## Comando LOCK
-
-Bloqueia um determinado recurso para leitura (R) ou escrita (W) durante um tempo de concessão específico (em segundos) para o cliente que está a enviar o pedido. Se o pedido for para um bloqueio de escrita (W), o recurso pode ser bloqueado para a escrita apenas
-se ele estiver no estado UNLOCKED e o limite de bloqueios de escrita K do recurso não tiver sido atingido. Neste caso, o servidor deve passar o recurso para o estado LOCKED-W, incrementar o contador de bloqueios de escrita, calcular o limite de tempo de concessão (i.e., deadline = tempo atual + tempo de concessão), registar o tuplo (id do cliente, deadline) na lista de bloqueios de escrita e retornar OK. Caso o recurso esteja LOCKED-W, LOCKED-R
-ou DISABLED, o servidor deve retornar NOK ao pedido de bloqueio para a escrita. <br>
-Se o pedido for para um bloqueio de leitura (R), o recurso pode ser bloqueado para a leitura apenas se ele estiver no estado LOCKED-R ou UNLOCKED. <br> Neste caso, o servidor deve calcular o limite de tempo de concessão (i.e., novamente, deadline = tempo atual + tempo concessão),
-registar o tuplo (id do cliente, deadline) na lista de bloqueios de leitura, passar o estado do recurso para LOCKED-R (caso ainda não esteja) e retornar OK. Caso o recurso esteja no estado LOCKED-W ou DISABLED, o servidor deve retornar NOK. <br>
-Em ambos casos (i.e., bloqueios de leitura e escrita), se o pedido se referir a um recurso inexistente (i.e., um número de recurso menor que 1 ou maior que N), o servidor deverá retornar UNKNOWN RESOURCE.
-
-
-#### **Run it on terminal** 
 ```bash
-LOCK <R|W> <número do recurso> <limite de tempo>
+python3 python3 server.py
+```
+<hr> 
+
+# Instruções (In client.py terminal)
+
+## Comando CREATE
+
+```bash
+CREATE UTILIZADOR <nome> <senha> 
+CREATE ARTISTA <id_spotify> || CREATE MUSICA <id_spotify> || CREATE <id_user> <id_musica> <avaliacao>
+```
+
+## Comando READ ou DELETE
+
+```bash
+CREATE UTILIZADOR <nome> <senha> || CREATE ARTISTA <id_spotify> || CREATE MUSICA <id_spotify> || CREATE <id_user> <id_musica> <avaliacao>
 ```
 
 ## Comando UNLOCK
