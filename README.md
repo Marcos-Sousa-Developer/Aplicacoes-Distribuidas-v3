@@ -57,8 +57,14 @@ python3 python3 server.py
 
 ```bash
 CREATE UTILIZADOR <nome> <senha> 
+```
+```bash
 CREATE ARTISTA <id_spotify> 
+```
+```bash
 CREATE MUSICA <id_spotify> 
+```
+```bash
 CREATE <id_user> <id_musica> <avaliacao>
 ```
 
