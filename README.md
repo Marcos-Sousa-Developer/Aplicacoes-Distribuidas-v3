@@ -49,7 +49,7 @@ curl -X "GET"
 python3 cliente.py 
 ```
 ```bash
-python3 python3 server.py
+python3 python3 servidor.py
 ```
 <hr> 
 
