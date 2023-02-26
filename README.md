@@ -13,7 +13,7 @@ Para este efeito, serão utilizados a framework de desenvolvimento Web Flask e o
 
 <hr>
 
-# Passos
+# Instruções
 
 ## 1ºPasso: Autenticação 
 
