@@ -12,7 +12,6 @@ Objetivo geral do presente projeto será concretizar um serviço Web para gerir 
 Para este efeito, serão utilizados a framework de desenvolvimento Web Flask e o motor de base de dados SQL sqlite no servidor. O programa cliente utilizará o módulo requests para implementar a interação cliente/servidor baseada em HTTP.
 
 <hr>
-
 # Passos
 
 ## 1ºPasso: Autenticação 
